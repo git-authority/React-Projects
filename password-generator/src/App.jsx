@@ -29,96 +29,119 @@ function App() {
 
   return (
     <>
-    <div className='min-h-screen flex items-center justify-center'>
-      <div className="flex items-center justify-center w-full h-40 max-w-md mx-auto shadow-md rounded-lg px-4 my-8 text-slate-600 bg-gray-800">
 
-        <div className='flex items-center flex-col w-full'>
+      {/* Viewport */}
 
-          <h1 className="text-white text-center mb-8">Password Generator</h1>
+      <div className='min-h-screen flex items-center justify-center'>
 
 
-          {/* Textbox and Copy Button */}
+        {/* div for outer grey box which contains everything */}
 
-          <div className="flex shadow rounded-lg overflow-hidden w-full">
-
-            {/* Textbox for Displaying Generated Password */}
-            <input type="text" value={password} className='outline-none w-full py-1 px-3 bg-white text-center' placeholder='Password' readOnly />
-
-            {/* Copy Buttonm */}
-            <button className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0 cursor-pointer'>Copy</button>
-
-          </div>
+        <div className="flex items-center justify-center w-full h-40 max-w-md mx-auto shadow-md rounded-lg px-4 my-8 text-slate-600 bg-gray-800">
 
 
+          {/* div for enabling the input field and checkboxes to be in different rows */}
+
+          <div className='flex items-center flex-col w-full'>
+
+
+            {/* Row 1  ->  Text - Password Generator */}
+
+            <h1 className="text-white text-center mb-8">Password Generator</h1>
 
 
 
-          <div className="w-full text-left mt-4">
 
+            {/* Row 2  ->  Textbox and Copy Button */}
 
-            <div className="flex items-center gap-3">
+            <div className="flex shadow rounded-lg overflow-hidden w-full">
 
+              {/* Textbox for Displaying Generated Password */}
+              <input type="text" value={password} className='outline-none w-full py-1 px-3 bg-white text-center' placeholder='Password' readOnly />
 
-              {/* Slider for Length of Password to be Generated */}
-
-              <input
-                type="range"
-                min={6}
-                max={100}
-                value={length}
-                onChange={(e) => setLength(e.target.value)}
-                className="w-[100px] h-1 cursor-pointer"
-              />
-
-
-              {/* Label for Length */}
-
-              <label className="text-orange-400">Length: {length}</label>
-
-
-              {/* Checkbox for Allowing Numbers in Password (with its separate div) */}
-
-              <div className="flex items-center gap-x-1">
-
-                <input type="checkbox" defaultChecked={numberAllowed} id="numberInput" onChange={() => {
-                  setNumberAllowed((prev) => !prev)
-                }} />
-
-                <label className="text-orange-400" htmlFor="numberInput">Numbers</label>
-
-              </div>
-
-
-
-              {/* Checkbox for Allowing Characters in Password (with its separate div) */}
-
-              <div className="flex items-center gap-x-1">
-
-                <input type="checkbox" defaultChecked={charAllowed} id="characterInput" onChange={() => {
-                  setCharAllowed((prev) => !prev)
-                }} />
-
-                <label className="text-orange-400" htmlFor="characterInput">Characters</label>
-
-              </div>
-
+              {/* Copy Button */}
+              <button className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0 cursor-pointer'>Copy</button>
 
             </div>
 
 
 
 
+            {/* Row 3  -> Outer div for Slider, Number Checkbox, Input Checkbox */}
+
+            <div className="w-full text-left mt-4">
+
+
+              {/* Row 3  -> Inner div for Slider, Number Checkbox, Input Checkbox */}
+
+              <div className="flex items-center gap-3">
+
+
+                {/* Slider for Length of Password to be Generated */}
+
+                <input
+                  type="range"
+                  min={6}
+                  max={100}
+                  value={length}
+                  onChange={(e) => setLength(e.target.value)}
+                  className="w-[100px] h-1 cursor-pointer"
+                />
+
+
+                {/* Label for Length */}
+
+                <label className="text-orange-400">Length: {length}</label>
+
+
+
+
+                {/* Checkbox for Allowing Numbers in Password (with its separate div) */}
+
+                <div className="flex items-center gap-x-1">
+
+                  <input type="checkbox" defaultChecked={numberAllowed} id="numberInput" onChange={() => {
+                    setNumberAllowed((prev) => !prev)
+                  }} />
+
+                  <label className="text-orange-400" htmlFor="numberInput">Numbers</label>
+
+                </div>
+
+
+
+
+
+                {/* Checkbox for Allowing Characters in Password (with its separate div) */}
+
+                <div className="flex items-center gap-x-1">
+
+                  <input type="checkbox" defaultChecked={charAllowed} id="characterInput" onChange={() => {
+                    setCharAllowed((prev) => !prev)
+                  }} />
+
+                  <label className="text-orange-400" htmlFor="characterInput">Characters</label>
+
+                </div>
+
+
+
+
+
+
+              </div>
+
+
+
+
+            </div>
 
 
 
           </div>
 
 
-
         </div>
-
-
-      </div>
       </div>
     </>
   )
