@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-function InputBox({label,className = ""}) {
+function InputBox({ label, className = "" }) {
 
 
     return (
@@ -21,7 +21,7 @@ function InputBox({label,className = ""}) {
 
                 {/* -------------------------------------- Label ---------------------------------- */}
 
-                <label  className="text-black/40 mb-2 inline-block">
+                <label className="text-black/40 mb-2 inline-block">
                     Label
                 </label>
 
@@ -35,9 +35,9 @@ function InputBox({label,className = ""}) {
 
                 <input
 
-                className="outline-none w-full bg-transparent py-1.5"
-                type="number"
-                placeholder="Amount"
+                    className="outline-none w-full bg-transparent py-1.5"
+                    type="number"
+                    placeholder="Amount"
                 />
 
                 {/* --------------------------- Input Box for Entering Amount Ends -------------------------- */}
