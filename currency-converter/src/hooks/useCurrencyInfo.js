@@ -1,4 +1,4 @@
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios"
 
 function useCurrencyInfo(currency){
@@ -8,7 +8,7 @@ function useCurrencyInfo(currency){
     useEffect(()=> {
         axios.get(`https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${currency}.json`)
         .then((response) => {
-            setData(response.currency)
+            setData(response.data[currency])
         })
         console.log(data)
     }, [currency])
