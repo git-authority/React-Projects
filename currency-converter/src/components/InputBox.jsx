@@ -2,15 +2,15 @@ import React from 'react'
 
 
 function InputBox({
-    label,
-    amount,
-    onAmountChange,
-    onCurrencyChange,
-    currencyOptions = [],
-    selectCurrency = "usd",
-    amountDisable = false,
-    currencyDisable = false,
-    className,
+    label,                          // "From" or "To"
+    amount,                         // Value entered by user
+    onAmountChange,                 // Function to update the amount
+    onCurrencyChange,               // Function to update currency
+    currencyOptions = [],           // All available currencies
+    selectCurrency = "usd",         // Currently selected currency
+    amountDisable = false,          // Disable input? (true for "To")
+    currencyDisable = false,        // Disable dropdown? (false for now)
+    className,                      // Optional class overrides
 
 }) {
 
