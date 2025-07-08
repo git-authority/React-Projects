@@ -26,16 +26,34 @@ Customize the password length and include numbers or special characters. Copy th
 ---
 
 
-
 ---
 
 ## 🚀 Getting Started
 
+### 📦 Clone the Repository
+
 ```bash
-npm install
-npm run dev   # or npm start
+git clone https://github.com/git-authority/password-generator.git
+cd password-generator
 ```
 
+### 📥 Install Dependencies
+
+```bash
+npm install
+```
+
+### ▶️ Run the App
+
+```bash
+npm run dev   # for Vite projects
+# or
+npm start     # for Create React App
+```
+
+The app will start on http://localhost:3000/ or http://localhost:5173/ depending on the setup.
+
+---
 ## 📸 Screenshot
 
 ![Screenshot](./public/screenshot.png)
