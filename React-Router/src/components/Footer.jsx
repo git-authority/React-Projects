@@ -2,9 +2,28 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
+
+
+        // ------------------------------------------------------ Footer Starts -------------------------------------------------------------
+
         <footer className="bg-white border-y">
+
+
+
+            {/* ------------------------------------------- Div for Footer Starts ----------------------------------------------------- */}
+
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+
+
+
+
+                {/* ---------------------- Outer Div for Logo and Right Side of Footer Starts -------------------------------------- */}
+
                 <div className="md:flex md:justify-between">
+
+
+                    {/* ------------------------------------- Logo Starts ----------------------------------------------- */}
+
                     <div className="mb-6 md:mb-0">
                         <Link to="/" className="flex items-center">
                             <img
@@ -14,6 +33,15 @@ export default function Footer() {
                             />
                         </Link>
                     </div>
+
+                    {/* ------------------------------------- Logo Ends ----------------------------------------------- */}
+
+
+
+
+
+                    {/* ----------------------------------- Div for Right Side of Footer Starts ----------------------------------- */}
+
                     <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                         <div>
                             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
@@ -66,13 +94,35 @@ export default function Footer() {
                             </ul>
                         </div>
                     </div>
+
+                    {/* ----------------------------------- Div for Right Side of Footer Ends ------------------------------------- */}
+
                 </div>
+
+                {/* ---------------------- Outer Div for Logo and Right Side of Footer Ends -------------------------------------- */}
+
+
+
+
+
+
+                {/* -------------------------------------- Horizontal Line Starts ------------------------------------------------- */}
+
                 <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+
+                {/* -------------------------------------- Horizontal Line Ends ------------------------------------------------- */}
+
+
+
+
+
+                {/* --------------------------------------- Lowest Part of Footer Starts --------------------------------------- */}
+
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <span className="text-sm text-gray-500 sm:text-center">
-                        © 2023
-                        <a href="https://hiteshchoudhary.com/" className="hover:underline">
-                            hiteshchoudhary
+                        © 2025
+                        <a href="https://github.com/git-authority" className="hover:underline">
+                            Abhrasnata Ray
                         </a>
                         . All Rights Reserved.
                     </span>
@@ -155,7 +205,21 @@ export default function Footer() {
                         </Link>
                     </div>
                 </div>
+
+                {/* --------------------------------------- Lowest Part of Footer Ends --------------------------------------- */}
+
+
+
+
             </div>
+
+            {/* ------------------------------------------- Div for Footer Ends ----------------------------------------------------- */}
+
+
+
         </footer>
+
+        // ------------------------------------------------------- Footer Ends -------------------------------------------------------------
+
     );
 }
