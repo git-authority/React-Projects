@@ -46,11 +46,6 @@ This is a multipage React application showcasing routing, layout composition, co
 
 ---
 
-## 📸 Screenshots
-
-> 📷 Add screenshots here if needed, like homepage, GitHub page, responsive view, etc.
-
----
 
 ## 🧠 Key Concepts Demonstrated
 
